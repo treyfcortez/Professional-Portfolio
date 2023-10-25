@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Trey Cortez Portfolio</title>
+    <title>Trey Cortez' Portfolio</title>
 </head>
 
 <body>
     <header class="header">
-        <h1>Web Development Portfolio</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#contact-me">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
+        <div class="controls">
+            <h1>Web Development Portfolio</h1>
+            <nav class="nav-css">
+                    <a href="#about-me"> <button>About Me</button></a>
+                    <a href="#drums"> <button>Drums</button></a>
+                    <a href="#concerts"> <button>Concerts</button></a>
+            </nav>
+        </div>
     </header>
+    <section class="name" id="description">
+        <h2>I'm Trey Cortez!</h2>
+    </section>
+    <main class="bio">  
+        <section class="box" id="about-me">
+            <img src="./assets/images/trey-picture.jpg" alt="Picture of Trey Cortez" />
+            <h3>About Me</h3>
+            <p>I was born and raised in Livermore, California.</p>
+        </section>
+        <section class="box" id="drums">
+            <img src="./assets/images/trey-drums.jpeg" alt="Picture of Treys drums" />
+            <h3>Drums</h3>
+            <p>Drums have been apart of my life since I was 5 years old. <br> Above is a picture of a drum kit I had 
+                custom made by my <br> favorite drum company called "SJC Custom Drums" in 2020.</p>
+        </section>
+        <section class="box" id="concerts">
+            <img src="./assets/images/dirty heads2.jpeg" alt="Picture of a band looking at a crowd from the stage" />
+            <h3>Concerts</h3>
+            <p>My first concert was in 2015 at a music festival in Mountain View, California. <br> Since then, I can't 
+                even count how many I've been to!</p>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <h5>Contact Me</h5>
+
+    </footer>
 
     
 </body>
