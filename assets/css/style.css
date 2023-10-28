@@ -41,10 +41,17 @@ body {
     margin-bottom: auto;
 }
 
-.bio {
+.background-img {
     display: flex;
-    width: 100%;
-    justify-content: center;
+}
+
+.background-img img {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    border: 3.5px solid rgb(174, 151, 151);
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 10px 10px 5px gray;
 }
 
 .name {
@@ -70,8 +77,23 @@ body {
     color: rgb(26, 26, 26);
 }
 
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.box#applications {
+    flex: 2 0 100%;
+}
+
+.box#applications img {
+    height: 400px;
+}
+
 .box {
-    width: 33%;
+    flex: 1 0 50%;
     position: relative;
     display: inline-block;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -102,7 +124,6 @@ body {
     margin-right: auto;
     border: 3.5px solid rgb(174, 151, 151);
     border-radius: 15px 15px 0px 0px;
-    height: 400px;
     box-shadow: 10px 10px 5px gray;
 }
 
