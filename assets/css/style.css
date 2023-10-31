@@ -10,7 +10,7 @@ body {
 
 .header {
     padding: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(234, 223, 209);
     color: rgb(26, 26, 26);
 }
@@ -58,6 +58,7 @@ body {
     display: flex;
     padding: 10px;
     min-height: 165px;
+    min-width: 33%;
     width: 33%;
     margin-top: 40px;
     margin-left: auto;
@@ -69,39 +70,16 @@ body {
     box-shadow: 10px 10px 5px gray;
 }
 
-.name h2 {
+.name h2, h4 {
     display: flex;
     font-size: 60px;
     margin: auto;
     text-align: center;
     font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(26, 26, 26);
 }
 
-.projects {
-    display: flex;
-    padding: 10px;
-    height: 165px;
-    width: 33%;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(174, 151, 151);
-    border-radius: 30px;
-    box-shadow: 10px 10px 5px gray;
-}
-
-.projects h4 {
-    display: flex;
-    font-size: 60px;
-    margin: auto;
-    text-align: center;
-    font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(26, 26, 26);
-}
 
 .bio {
     display: flex;
@@ -178,7 +156,25 @@ body {
     .bio {
         flex-direction: column;
     }
+
     .box {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .name {
+        width: 50%;
+    }
+
+    .name h2,
+    h4 {
+        font-size: 30px;
     }
 }
